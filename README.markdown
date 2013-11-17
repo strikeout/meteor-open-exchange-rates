@@ -1,18 +1,29 @@
-A wrapper for the excellent open-exchange-rates and money.js npm libraries (https://github.com/josscrowcroft/npm-exchange-rates)
+A wrapper for the excellent open-exchange-rates and money.js npm libraries 
+----
+This package lets you convert any currency into any other currency with the most recent exchange rates fetched from https://openexchangerates.org
 
-Init open-exchange-rates api with your api_key (registration required at their site)
+(https://github.com/josscrowcroft/npm-exchange-rates)
+(https://github.com/josscrowcroft/money.js)
+
+
+
+
+Setup and usage
+----
+
+Init open-exchange-rates api with your api_key (registration required at their site https://openexchangerates.org)
 
 ```js
 // init open-exchange-rates api with api_key
-		if (Meteor.isServer) {
-        	Oxr.setAppId("3164dc5a975441e18a6f64d4f7e4131d");
-		}
+	if (Meteor.isServer) {
+            Oxr.setAppId("123456789abcdefghijklmnopqrstuvwxyz"); // insert your app_id!
+	}
 ```
 
 then you can call on the client:
 ```js
-// init open-exchange-rates api with api_key
-        Meteor.call('currency_convert', val, 'EUR', 'USD', function(err, result) {
+// converts amount x of euros into usd, rounds result to two decimal digits  
+        Meteor.call('currency_convert', amount, 'EUR', 'USD', function(err, result) {
             Session.set('usd', result.toFixed(2))
         });
 ```
