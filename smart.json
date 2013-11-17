@@ -1,0 +1,11 @@
+{
+    "name": "open-exchange-rates",
+    "version": "0.0.1",
+    "description": "open-exchange-rates smart package for Meteor!",
+
+    "author": "Thomas Steinhauer",
+    "homepage": "https://github.com/strikeout/meteor-open-exchange-rates",
+    "git": "https://github.com/strikeout/meteor-open-exchange-rates.git",
+
+    "packages": {}
+}
