@@ -1,4 +1,4 @@
-A wrapper for the excellent open-exchange-rates and money.js npm libraries 
+Open-exchange-rates and money.js for Meteor
 ----
 This package lets you convert any currency into any other currency with the most recent exchange rates fetched from https://openexchangerates.org
 
