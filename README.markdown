@@ -1,4 +1,4 @@
-A wrapper for the excellent open-exchange-rates and money.js npm librarys (https://github.com/josscrowcroft/npm-exchange-rates)
+A wrapper for the excellent open-exchange-rates and money.js npm libraries (https://github.com/josscrowcroft/npm-exchange-rates)
 
 Init open-exchange-rates api with your api_key (registration required at their site)
 
